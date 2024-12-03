@@ -2,9 +2,9 @@
 #include <math.h>
 #include <cuda_runtime.h>
 
-#define BASE_TYPE double
+#define BASE_TYPE float
 #define M_PI  3.141592653
-#define n 1e8
+#define n 100'000'000
 
 __global__ void sinMass(BASE_TYPE* A, int arraySize)
 {
